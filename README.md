@@ -1,28 +1,24 @@
-# 🇮🇳 BharatSutra
+### BharatSutra
 
-### Digital Platform for India's Cultural Heritage
+Digital Platform for India's Cultural Heritage
 
 BharatSutra is a responsive web application designed to showcase India's rich cultural heritage, including historical monuments, festivals, traditional arts, and cultural traditions.
 
 The platform provides an interactive and user-friendly experience for exploring India's diverse heritage through structured content and responsive web design.
 
----
+## Features
 
-## 🚀 Features
+* Explore historical monuments and heritage sites
+* Discover Indian festivals and cultural traditions
+* Explore traditional Indian arts and culture
+* User registration and authentication
+* Interactive navigation and dynamic content
+* Responsive design for different screen sizes
+* Cross-browser compatible interface
+* Dynamic content management using PHP
+* Database integration for application data
 
-* 🏛️ Explore historical monuments and heritage sites
-* 🎉 Discover Indian festivals and cultural traditions
-* 🎨 Explore traditional Indian arts and culture
-* 🔐 User registration and authentication
-* 🧭 Interactive navigation and dynamic content
-* 📱 Responsive design for different screen sizes
-* 🌐 Cross-browser compatible interface
-* 🗂️ Dynamic content management using PHP
-* 🗄️ Database integration for application data
-
----
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose                            |
 | ---------- | ---------------------------------- |
@@ -32,11 +28,9 @@ The platform provides an interactive and user-friendly experience for exploring 
 | PHP        | Server-side development            |
 | MySQL      | Database management                |
 
----
 
-## 📂 Project Structure
-
-```text
+## Project Structure
+text
 BharatSutra/
 │
 ├── assets/
@@ -54,12 +48,8 @@ BharatSutra/
 ├── index.php
 ├── README.md
 └── .gitignore
-```
 
----
-
-## ⚙️ Installation & Setup
-
+## Installation & Setup
 ### 1. Clone the repository
 
 ```bash
@@ -105,7 +95,7 @@ http://localhost/BharatSutra/
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 The main objectives of BharatSutra are:
 
@@ -117,18 +107,18 @@ The main objectives of BharatSutra are:
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 BharatSutra is designed to provide a consistent user experience across:
 
-* 💻 Desktop
-* 💻 Laptop
-* 📱 Mobile
-* 📲 Tablet
+* Desktop
+* Laptop
+* Mobile
+* Tablet
 
 ---
 
-## 📚 Research Publication
+## Research Publication
 
 Research based on the BharatSutra project was published in the:
 
@@ -140,7 +130,7 @@ The publication demonstrates the project's technical documentation, research con
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Potential future improvements include:
 
@@ -155,7 +145,7 @@ Potential future improvements include:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Shrushti Gaikwad**
 
@@ -167,4 +157,4 @@ Artificial Intelligence • Generative AI • Machine Learning • Python • Da
 
 ---
 
-⭐ If you find this project interesting, consider giving the repository a star!
+If you find this project interesting, consider giving the repository a star!
