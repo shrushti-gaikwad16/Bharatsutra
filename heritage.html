@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Heritage Sites</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <script>
+  if(localStorage.getItem("loggedIn") !== "true"){
+      window.location.href = "login.html";
+  }
+</script>
+
+    <header class='site-header'>
+      <div class='container'>
+        <h1 class='brand'>BharatSutra</h1>
+        <nav class='main-nav'>
+          <a href='index.html'>Home</a>
+          <a href='heritage.html'>Heritage</a>
+          <a href='culture.html'>Culture</a>
+          <a href='dance.html'>Dance</a>
+          <a href='festivals.html'>Festivals</a>
+        </nav>
+      </div>
+    </header>
+<main class='container'>
+  <section class='card'>
+    <h2>Heritage Sites</h2>
+    <p class='small'>Click 'View Details' for quick preview, or 'Read More' for full page.</p>
+    <div class='grid'>
+      <article class='site-card card'>
+        <img src='assets/images/tajmahal.jpg' alt='Taj Mahal'>
+        <h4>Taj Mahal</h4>
+        <p class='small'>Short intro about Taj Mahal.</p>
+        <div>
+          <button class='cta' onclick="showDetails('heritage','Taj Mahal')">View Details</button> 
+          <a class='cta' href='details/tajmahal.html?item=Taj Mahal'>Read More</a>
+        </div>
+      </article>
+      <article class='site-card card'>
+        <img src='assets/images/hampi.jpg' alt='Hampi'>
+        <h4>Hampi</h4>
+        <p class='small'>Short intro about Hampi.</p>
+        <div>
+          <button class='cta' onclick="showDetails('heritage','Hampi')">View Details</button> 
+          <a class='cta' href='details/hampi.html?item=Hampi'>Read More</a>
+        </div>
+      </article>
+      <article class='site-card card'>
+        <img src='assets/images/nalanda.jpg' alt='Nalanda'>
+        <h4>Nalanda</h4>
+        <p class='small'>Short intro about Nalanda.</p>
+        <div>
+          <button class='cta' onclick="showDetails('heritage','Nalanda')">View Details</button> 
+          <a class='cta' href='details/nalanda.html?item=Nalanda'>Read More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class='site-footer'>
+  <div class='container'>
+    <p>BharatSutra</p>
+  </div>
+</footer>
+
+<!-- Shared modal -->
+<div id="infoModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="">
+    <p id="modalText"></p>
+  </div>
+</div>
+<script src="js/main.js"></script></body></html>

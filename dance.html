@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Dance Studio</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <header class='site-header'>
+      <div class='container'>
+        <h1 class='brand'>BharatSutra</h1>
+        <nav class='main-nav'>
+          <a href='index.html'>Home</a>
+          <a href='heritage.html'>Heritage</a>
+          <a href='culture.html'>Culture</a>
+          <a href='dance.html'>Dance</a>
+          <a href='festivals.html'>Festivals</a>
+        </nav>
+      </div>
+    </header>
+    <main class='container'>
+      <section class='card'>
+        <h2>Dance Studio</h2>
+        <p class='small'>Click 'View Details' for quick preview, or 'Read More' for full page.</p>
+        <div class='grid'>
+          <article class='site-card card'>
+            <img src='assets/images/bharatanatyam.jpg' alt='Bharatanatyam'>
+            <h4>Bharatanatyam</h4>
+            <p class='small'>Short intro about Bharatanatyam.</p>
+            <div>
+              <button class='cta' onclick="showDetails('dance','Bharatanatyam')">View Details</button> 
+              <a class='cta' href='details/bharatanatyam.html?item=Bharatanatyam'>Read More</a>
+            </div>
+          </article>
+          <article class='site-card card'>
+            <img src='assets/images/kathak.jpg' alt='Kathak'>
+            <h4>Kathak</h4>
+            <p class='small'>Short intro about Kathak.</p>
+            <div><button class='cta' onclick="showDetails('dance','Kathak')">View Details</button> 
+              <a class='cta' href='details/kathak.html?item=Kathak'>Read More</a>
+            </div>
+          </article>
+          <article class='site-card card'>
+            <img src='assets/images/chhau.jpg' alt='Chhau'>
+            <h4>Chhau</h4>
+            <p class='small'>Short intro about Chhau.</p>
+            <div>
+              <button class='cta' onclick="showDetails('dance','Chhau')">View Details</button> 
+              <a class='cta' href='details/chhau.html?item=Chhau'>Read More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class='site-footer'>
+      <div class='container'>
+        <p>BharatSutra</p>
+      </div>
+    </footer>
+
+<!-- Shared modal -->
+<div id="infoModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="">
+    <p id="modalText"></p>
+  </div>
+</div>
+<script src="js/main.js"></script></body></html>

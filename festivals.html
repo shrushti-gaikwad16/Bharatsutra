@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Festival Calendar</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <script>
+  if(localStorage.getItem("loggedIn") !== "true"){
+      window.location.href = "login.html";
+  }
+</script>
+
+<header class='site-header'>
+  <div class='container'>
+    <h1 class='brand'>BharatSutra</h1>
+    <nav class='main-nav'>
+      <a href='index.html'>Home</a>
+      <a href='heritage.html'>Heritage</a>
+      <a href='culture.html'>Culture</a>
+      <a href='dance.html'>Dance</a>
+      <a href='festivals.html'>Festivals</a>
+    </nav>
+  </div>
+</header>
+<main class='container'>
+  <section class='card'>
+    <h2>Festival Calendar</h2>
+    <p class='small'>Click 'View Details' for quick preview, or 'Read More' for full page.</p>
+    <div class='grid'>
+      <article class='site-card card'>
+        <img src='assets/images/diwali.jpg' alt='Diwali'>
+        <h4>Diwali</h4>
+        <p class='small'>Short intro about Diwali.</p>
+        <div>
+          <button class='cta' onclick="showDetails('festivals','Diwali')">View Details</button> 
+          <a class='cta' href='details/diwali.html?item=Diwali'>Read More</a>
+        </div>
+      </article>
+      <article class='site-card card'>
+        <img src='assets/images/onam.jpg' alt='Onam'>
+        <h4>Onam</h4>
+        <p class='small'>Short intro about Onam.</p>
+        <div>
+          <button class='cta' onclick="showDetails('festivals','Onam')">View Details</button> 
+          <a class='cta' href='details/onam.html?item=Onam'>Read More</a>
+        </div>
+      </article>
+      <article class='site-card card'>
+        <img src='assets/images/baisakhi.jpg' alt='Baisakhi'>
+        <h4>Baisakhi</h4>
+        <p class='small'>Short intro about Baisakhi.</p>
+        <div>
+          <button class='cta' onclick="showDetails('festivals','Baisakhi')">View Details</button> 
+          <a class='cta' href='details/baisakhi.html?item=Baisakhi'>Read More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class='site-footer'>
+  <div class='container'>
+    <p>BharatSutra</p>
+  </div>
+</footer>
+
+<!-- Shared modal -->
+<div id="infoModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="">
+    <p id="modalText"></p>
+  </div>
+</div>
+<script src="js/main.js"></script></body></html>

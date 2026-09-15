@@ -1,0 +1,30 @@
+
+:root{--accent:#f97316;--bg:#fffaf0;--card:#fff;--muted:#6b7280;}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:var(--bg);color:#111;}
+.container{max-width:1000px;margin:20px auto;padding:0 16px;}
+.site-header{background:linear-gradient(90deg,#fff7ed,#fff1e6);border-bottom:1px solid #f3e8e0;padding:12px 0;}
+.brand{display:inline-block;font-weight:800;color:var(--accent);font-size:20px;margin:0;}
+.main-nav{float:right;}
+.main-nav a{margin-left:14px;text-decoration:none;color:#333;font-weight:600;}
+.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06);margin-bottom:16px;}
+.hero{display:flex;flex-direction:column;gap:12px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px;}
+.tile{display:block;padding:18px;border-radius:8px;background:linear-gradient(180deg,#fff,#fff8f0);text-decoration:none;color:#222;}
+.small{color:var(--muted);font-size:14px;}
+.site-footer{text-align:center;padding:18px;color:var(--muted);margin-top:24px;}
+.site-header::after{content:'';display:block;clear:both;}
+.site-card img{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:8px;}
+.cta{background:var(--accent);color:white;padding:10px 12px;border-radius:8px;border:none;cursor:pointer;}
+.festival-table{width:100%;border-collapse:collapse;}
+.festival-table th,.festival-table td{border:1px solid #eee;padding:8px;text-align:left;}
+.small-card{padding:12px;}
+@media(max-width:600px){.main-nav{float:none;margin-top:8px}.brand{display:block}}
+
+/* Modal */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000;padding:40px 16px;}
+.modal[aria-hidden="false"]{display:block;}
+.modal-content{max-width:720px;margin:0 auto;background:#fff;padding:18px;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.2);}
+.close{float:right;font-size:22px;background:none;border:none;cursor:pointer;}
+.modal img{width:100%;border-radius:8px;margin:10px 0;}
+.modal-actions{margin-top:12px;text-align:right;}
+.back-link{display:inline-block;margin-bottom:12px;color:#333;text-decoration:none;}

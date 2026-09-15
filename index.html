@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BharatSutra — Discover India's Heritage and Rich Culture</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script>
+  if(localStorage.getItem("loggedIn") !== "true"){
+      window.location.href = "login.html";
+  }
+</script>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">BharatSutra</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="culture.html">Culture</a>
+        <a href="dance.html">Dance</a>
+        <a href="festivals.html">Festivals</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero card">
+      <h2>Discover India's Living Heritage and Culture</h2>
+      <p class="small">Interactive demo showcasing monuments, dance, crafts, festivals and more.</p>
+      <div class="grid">
+        <a class="tile" href="heritage.html">
+          <h3>Heritage</h3>
+          <p>Heritage tours & site stories</p>
+        </a>
+        <a class="tile" href="culture.html">
+          <h3>Culture</h3>
+          <p>Food, crafts & rituals</p>
+        </a>
+        <a class="tile" href="dance.html">
+          <h3>Dance</h3>
+          <p>Classical & Folk</p>
+        </a>
+        <a class="tile" href="festivals.html">
+          <h3>Festivals</h3>
+          <p>Calendar & guides</p>
+        </a>
+      </div>
+    </section>
+    <section class="about card">
+      <h3>About the Project</h3>
+      <p class="small">This website contains interactive modals and separate detail information for each item.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>BharatSutra • Built for cultural preservation</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login • BharatSutra</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .login-box {
+      max-width: 380px;
+      margin: 80px auto;
+      padding: 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="login-box card">
+      <h2>Login to BharatSutra</h2>
+
+      <form id="loginForm">
+        <label>Username</label>
+        <input type="text" id="username" required>
+
+        <label>Password</label>
+        <input type="password" id="password" required>
+
+        <button type="submit" class="cta" style="width:100%;">Login</button>
+      </form>
+
+      <p id="errorMsg" style="color:red;"></p>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+
+      let u = document.getElementById("username").value;
+      let p = document.getElementById("password").value;
+
+      // DEMO CREDENTIALS
+      if(u === "admin" && p === "1234"){
+        localStorage.setItem("loggedIn", "true");
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("errorMsg").textContent = "Invalid username or password!";
+      }
+    });
+  </script>
+
+</body>
+</html>
